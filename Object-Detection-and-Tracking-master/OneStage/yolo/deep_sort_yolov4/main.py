@@ -116,8 +116,8 @@ def main(yolo):
     nms_max_overlap = 1.0
 
     counter = []
-    # deep_sort
-    model_filename = 'model_data/yolo4_weight.h5'
+    # deep_sort model
+    model_filename = 'model_data/market1501.pb'
     encoder = gdet.create_box_encoder(model_filename, batch_size=1)
 
     find_objects = ['person']
